@@ -8,7 +8,7 @@
         <div class="quote">
             <a href="#" data-target="#modalIMG" data-toggle="modal" class="color-gray-darker c6 td-hover-none">
                 <div class="ba-0 ds-1">
-                    <img alt="Card image cap" class="card-img-top" src="{{one_image.image.url}}" />
+                    <img alt="Card image cap" class="card-img-top" src="{{one_image.image.url}}" style="width: 300px;">
                 </div>	
             </a>
         </div>
@@ -21,13 +21,22 @@
                     </div>
                     <div class="modal-footer">
                         <p>
-                            DESCRIPTION: {{one_image.description}}</span>
-                        </p>
+                            <strong>DESCRIPTION </strong>
+                            : {{one_image.description}}</span>
+                        </p> 
+                        <br>
                         <p>
-                            Category: <span style="font-weight:bolder;">{{one_image.category}}</span>
+                            <strong>Category</strong>:
+                            <span style="font-weight:bolder;">
+                                {{one_image.category}}
+                            </span>
                         </p>
+                        <br>
                         <p>
-                            Location:  <span style="font-weight:bolder;">{{one_image.location}}</span>
+                            <strong>Location</strong>:
+                            <span style="font-weight:bolder;">
+                                {{one_image.location}}
+                            </span>
                         </p>
                     </div>
                 </div>
